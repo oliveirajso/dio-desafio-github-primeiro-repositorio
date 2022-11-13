@@ -1,0 +1,80 @@
+
+---
+
+# Dicas rápidas do Git
+
+Caso você não conheça o Git, ou se já conhece vou te apresentar algumas dicas valiosas, se tratando de programação, organização e um fator crucial para continuar a evolução do seu projeto e nada melhor do que o Git para nos ajudar nesse processo.
+
+#### Visualizar as modificações feitas
+
+```shell
+git reflog
+```
+
+#### Git interativo
+
+```shell
+git add -i
+```
+
+#### Exibir log em apenas uma linha
+
+Na config para deixar como padrão
+
+```shell
+git config format.pretty oneline
+```
+
+No terminal
+
+```shell
+git log --oneline
+```
+
+#### Desfazer commits locais
+
+```shell
+git reset HEAD~
+```
+
+#### Apagar branchs local
+
+```shell
+git branch -d <nome_branch>
+```
+
+#### Apagar branchs remotas
+
+```shell
+git push <nome_remoto> --delete <nomebranch>
+```
+
+#### Renomear uma branch local
+
+```shell
+git branch -m <nome_branch_antigo> <nome_branch_nova>
+```
+
+#### Resolva conflitos
+
+```shell
+git mergetool
+```
+
+#### Para clonar a branch específica
+
+```shell
+git clone -b <branch> <nome_remoto>
+```
+
+#### Visualizar as modificações feitas
+
+```shell
+git reflog
+```
+
+#### Verificar configurações do git
+
+```shell
+git config --list
+```
